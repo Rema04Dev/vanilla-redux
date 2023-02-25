@@ -4,8 +4,39 @@
         <meta charset="utf-8" />
         <title>Webpack App</title>
     </head>
+    <style>
+        .close-symbol{
+            font-size: 24px;
+            background: #2c2c2c;
+            color: aliceblue;
+            padding: 5px;
+            margin-left: 20px;
+        }
+    </style>
     <body>
-        <h1>Vanilla Redux TODO</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1>Vanilla Redux TODO</h1>
+                    <form id="todo-form">
+                        <div class="mb-3">
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            id="todo-input"
+                            placeholder="Enter task...">
+                        </div>
+                        <button type="submit" id="todo-submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <ul class="list-group mt-3" id="todo-list">
+                        <li class="list-group-item">
+                            An item 
+                            <button type="button" id="todo-remove" class="btn-close"></button>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
     </body>
     
 </html>
