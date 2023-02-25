@@ -1,3 +1,4 @@
+import { createStore } from 'redux';
 export default () => {
     const initialState = {
         todos: [],
@@ -17,4 +18,7 @@ export default () => {
             default: return state;
         }
     }
+
+    const store = createStore(todoReducer);
+    console.log(store.getState());
 };
